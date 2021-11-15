@@ -1,0 +1,65 @@
+.main1{
+  background:#ffff;
+  padding: 30px;
+  margin:0px auto;
+  max-width: 650px;
+  border-radius: 4px;
+  display: block;
+}
+.form input[type=text]{
+  height:40px;
+  padding: 0 20px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  min-width: 50%;
+}
+.form input[type=date]{
+  height:40px;
+  padding: 0 20px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  min-width: 69%;
+}
+.form input[type=checkbox]{
+  height:13px;
+  padding: 0 10px;
+  font-size: 10px;
+  border: 1px solid #ccc;
+  min-width: 30%;
+}
+.btn_adicionar1,.btn_cancela{
+  border:none;
+  height:30px;
+  width:30px;
+  align-items: center;
+  justify-content: center;
+  color:#fff;
+
+}
+.btn_adicionar1{
+  background: #f04c64; 
+}
+.btn_cancela{
+  background: #4824e7;
+}
+.titulo1{
+  text-align: center;
+  background:#ffff;
+  padding: 10px;
+  margin-top:10px;
+  margin-bottom:0px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.label{
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-size: small;
+}
+h1{
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+.btn-form{
+    width:40%;
+    display:flex;
+    justify-content: flex-end;
+  }

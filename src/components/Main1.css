@@ -1,0 +1,43 @@
+.main{
+  background:#ffff;
+  padding: 30px;
+  margin:0px auto;
+  max-width: 650px;
+  border-radius: 4px;
+}
+.main h1{
+  font-size: 20px;
+  text-align: center;
+}
+
+.form{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form input[type=text]{
+  height:40px;
+  padding: 0 20px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  min-width: 80%;
+}
+.btn_adicionar{
+  border:none;
+  height:40px;
+  width:40px;
+  background: #f04c64;
+  color:#fff;
+  align-items: center;
+  justify-content: center;
+}
+.btn_busca{
+  border:none;
+  height:40px;
+  width:40px;
+  background: #4824e7;
+  color:#fff;
+  align-items: center;
+  justify-content: center;
+}
