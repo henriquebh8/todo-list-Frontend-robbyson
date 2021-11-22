@@ -1,0 +1,23 @@
+.tarefa-container-tarefa{
+  background-color:rgb(205, 223, 245);
+  display:block;
+  border-radius:5px;
+  justify-content:flex-start;
+  color: #444;
+  align-items: center;
+  padding: 50px;
+  margin:0px auto;
+  max-width: 800px;
+  border-radius: 4px;
+  
+  
+}
+.table-tarefa-container{
+
+
+}
+
+.container-div{
+  font-family: sans-serif;
+  background: #30a9e0;
+}

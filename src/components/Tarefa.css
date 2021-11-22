@@ -1,5 +1,5 @@
 .tarefa-container{
-  background-color:#eee;
+  background-color:rgb(205, 223, 245);
   margin:8px 0;
   padding:15px 20px;
   display:flex;
@@ -17,8 +17,12 @@
   
 }
 .deletar-tarefa{
-  background: #f09aa7; 
+  background: #f38a9a; 
 }
-.mostrar-tarefa{
+.editar-tarefa{
   background: #927eec;
+}
+
+.info-tarefa{
+  background: #8ac0f3; 
 }

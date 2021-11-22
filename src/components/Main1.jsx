@@ -6,7 +6,7 @@ import{useHistory} from 'react-router-dom';
 
 const Main1 = () => {
   const handleInputChange=(e)=>{
-    console.log(e)
+   
     };
     const history = useHistory();
     function handlerAdd(){
