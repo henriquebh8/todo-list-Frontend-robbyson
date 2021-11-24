@@ -21,6 +21,8 @@ const App= () => {
   };
   fetchTasks();
   },[]);
+
+  
  
   return ( 
     <Router>
@@ -28,7 +30,7 @@ const App= () => {
     <Route path="/" exact render={()=>(
     <>
     <Main1/>
-    <Tarefas tarefas={tarefas}/>
+    <Tarefas tarefas={tarefas} setTarefas={(itens)=>setTarefas(itens)}/>
  
     </>
     )} 

@@ -17,7 +17,6 @@ const baseURL='http://localhost:3001/api';
   localStorage.clear();
   history.push('/');
 }
-
   useEffect(()=>{
     const fetchTasks=async()=>{
     const response=await axios.get(`${baseURL}/${params._id}`);
@@ -26,22 +25,13 @@ const baseURL='http://localhost:3001/api';
   fetchTasks();
   },[]);
 
-
-if(tarefas1.hiden===true){
-    return 'tarefa arquivada';
-}
-
-
- 
   return ( 
-
 <div className="container-div">
 <div className="tarefa-container-tarefa">
   <h1>Detalhes da Tarefa</h1>
   <Table striped bordered hover>
   <thead>
     <tr>
-      
       <th>Nome da tarefa</th>
       <th>Descrição da tarefa</th>
       <th>Data de conclusão</th>
@@ -49,11 +39,9 @@ if(tarefas1.hiden===true){
   </thead>
   <tbody>
     <tr>
-      
       <td>{tarefas1.task}</td>
       <td>{tarefas1.description}</td>
       <td>{tarefas1.dueDate} </td>
-      
     </tr>
     <tr>
       <td> <button onClick={handlerBack1} className="btn_cancela"><IoIosArrowBack/></button> </td>
@@ -61,11 +49,8 @@ if(tarefas1.hiden===true){
    
   </tbody>
 </Table>
-
 </div>
-
 </div>
    );
 }
- 
 export default TarefaDetalhada;

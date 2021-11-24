@@ -1,5 +1,5 @@
 import React from 'react';
-import {FaTrash,FaInfo,FaEdit} from 'react-icons/fa';
+import {FaTrash,FaInfo,FaEdit,FaExclamation} from 'react-icons/fa';
 import{useHistory} from 'react-router-dom';
 import axios from 'axios';
 import './Tarefa.css';
@@ -28,7 +28,17 @@ const Tarefa = ({tarefa}) => {
     }
    
   }
+    const handleDeleteAsk =e=>{
+      e.preventDefault();
+      console.log(e.currentTarget.nextSibling)
+     const exclamation=e.currentTarget.nextSibling;
+     exclamation.setAttribute('display','block')
+     e.currentTarget.remove();
+    }
+  
+
   return ( 
+    <div style={tarefa.hiden?{display:'none'}:{}}>
   <div className="tarefa-container" style={tarefa.completed?{borderLeft:'6px solid #4824e7'}:{}}>
     <div key={String(tarefa._id)}>
     {tarefa.task}
@@ -36,9 +46,10 @@ const Tarefa = ({tarefa}) => {
     <div className="buttons-container">
     <button  onClick={handlerInfo}className="info-tarefa"> <FaInfo/></button>
      <button className="editar-tarefa" onClick={handlerEdit}> <FaEdit/></button>
-     <button onClick={handleDelete} className="deletar-tarefa"> <FaTrash/></button>     
+     <button onClick={handleDeleteAsk} className="deletar-tarefa"> <FaTrash/></button>  
+     <FaExclamation className="exclamation" size={23} display="none" cursor="pointer" onClick={handleDelete}/>   
     </div>
- 
+    </div>
   </div>
 
   );

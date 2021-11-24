@@ -26,3 +26,8 @@
 .info-tarefa{
   background: #8ac0f3; 
 }
+.exclamation{
+  background:rgb(197, 68, 68);
+  justify-content: flex-end;
+  
+}
