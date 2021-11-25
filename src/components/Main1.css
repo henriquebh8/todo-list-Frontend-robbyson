@@ -23,21 +23,20 @@
   border: 1px solid #ccc;
   min-width: 80%;
 }
-.btn_adicionar{
+.btn_adicionar,.btn_limpar,.btn_busca{
   border:none;
   height:40px;
   width:40px;
-  background: #f04c64;
   color:#fff;
   align-items: center;
   justify-content: center;
 }
 .btn_busca{
-  border:none;
-  height:40px;
-  width:40px;
   background: #4824e7;
-  color:#fff;
-  align-items: center;
-  justify-content: center;
+}
+.btn_adicionar{
+  background: #f04c64;
+}
+.btn_limpar{
+  background: #b69754;
 }

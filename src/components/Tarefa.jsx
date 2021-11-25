@@ -30,7 +30,6 @@ const Tarefa = ({tarefa}) => {
   }
     const handleDeleteAsk =e=>{
       e.preventDefault();
-      console.log(e.currentTarget.nextSibling)
      const exclamation=e.currentTarget.nextSibling;
      exclamation.setAttribute('display','block')
      e.currentTarget.remove();
